@@ -1,0 +1,44 @@
+body {
+    background-image: radial-gradient(circle, #ffffff, #a1a1a1);
+    
+}
+
+main {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainView {
+    margin-top: 50px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px gray;
+}
+
+#leftAr, #rightAr {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    cursor: pointer;
+}
+#rightAr {
+    transform: scale(-1, 1);
+}
+
+#picDiv {
+    flex-grow: 20;
+    display: flex;
+    background-image: url("arrow.svg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
