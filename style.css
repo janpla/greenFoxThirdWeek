@@ -11,8 +11,8 @@ main {
 }
 
 #mainView {
-    margin-top: 50px;
-    height: 350px;
+    margin-top: 35px;
+    height: 450px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -20,8 +20,9 @@ main {
     box-shadow: 0px 0px 10px gray;
 }
 
-#leftAr, #rightAr {
+.arrow {
     flex-grow: 1;
+    flex-basis: 0;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -32,13 +33,34 @@ main {
 #rightAr {
     transform: scale(-1, 1);
 }
+.arrow:hover {
+    background-color: #e0e0e0;
+}
 
 #picDiv {
     flex-grow: 20;
+    flex-basis: 0;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     background-image: url("arrow.svg");
     background-position: center;
     background-size: cover;
     height: 100%;
 }
 
+#photoTitle, #photoDescription {
+    font-size: 40px;
+    font-family: "Rubik", sans-serif;
+    color: white;
+    max-width: 100%;
+    background: rgba(30,30, 30, 0.7);
+    padding: 10px 30px 0px 30px;
+    box-sizing: border-box;
+}
+#photoDescription {
+    font-size: 25px;
+    font-family: "Oxygen", sans-serif;
+    color: grey;
+    padding-bottom: 20px;
+}
